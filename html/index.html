@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow fixed w-full z-10 top-0">
+        <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+            <h2 class="text-2xl font-bold text-blue-600">Kowshik J S</h2>
+            <div class="md:hidden cursor-pointer" id="hamburger">
+                <i class="fas fa-bars text-xl"></i>
+            </div>
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-600">Projects</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16 md:py-20 mt-16">
+        <div class="container mx-auto text-center" data-aos="fade-up">
+            <h3 class="text-lg">Hello, I'm</h3>
+            <h1 class="text-3xl md:text-5xl font-bold">Kowshik J S</h1>
+            <h4 class="text-xl md:text-2xl mt-4">A Software Engineer</h4>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="https://drive.google.com/file/d/1bzpexIcKhJ_jHq3ZMSh5Ji8D8NSWeMbk/view?usp=drive_link"
+                    class="bg-blue-700 px-6 py-2 rounded-md shadow-md hover:bg-blue-800" data-aos="zoom-in">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 md:py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold mb-8" data-aos="fade-right">Projects</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="flip-left">
+                    <a href="https://github.com/Kowshik-js/Amazon-clone" target="_blank" class="block">
+                        <img src="designer-photo.png" alt="Amazon Clone" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-600">Amazon Clone</h3>
+                            <p class="text-gray-600 mt-2">JavaScript</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="flip-right">
+                    <a href="https://github.com/Kowshik-js/foodOrdering-website" target="_blank" class="block">
+                        <img src="web.png" alt="Restaurant Website" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-600">Restaurant Website</h3>
+                            <p class="text-gray-600 mt-2">ReactJS</p>
+                        </div>
+                    </a>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="flip-left">
+                    <a href="https://github.com/Kowshik-js/employee-management-system" target="_blank" class="block">
+                        <img src="SEO.png" alt="Employee Management System" class="w-full h-40 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-600">Employee Management System</h3>
+                            <p class="text-gray-600 mt-2">Java, Swings</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center" data-aos="fade-up">
+            <div class="md:w-1/2 flex justify-center mb-6 md:mb-0">
+                <img src="my-passport-photo.jpg" alt="Kowshik J S"
+                    class="rounded-full w-64 h-64 object-cover shadow-lg border-4 border-blue-500">
+            </div>
+            <div class="md:w-1/2">
+                <h1 class="text-3xl font-bold mb-4">About Me</h1>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    Hello! I'm Kowshik J S, a passionate Computer Science and Engineering student currently pursuing my
+                    degree at SDM Institute of Technology, Ujire.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    With a strong foundation in Java and a growing expertise in the MERN Stack, I am driven by my ambition
+                    to become a skilled web developer.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Feel free to reach out to me at <span class="font-semibold">kowshikjs487@gmail.com</span> or
+                    <span class="font-semibold">9141047589</span>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-20 bg-gray-100" data-aos="fade-up">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold text-center mb-12">Contact Me</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-6">Get in Touch</h2>
+                    <form>
+                        <input type="text" placeholder="Your Name"
+                            class="w-full mb-4 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="email" placeholder="Email"
+                            class="w-full mb-4 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <input type="tel" placeholder="Your Phone"
+                            class="w-full mb-4 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <textarea placeholder="Write Your Message" rows="5"
+                            class="w-full mb-4 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        <button type="submit"
+                            class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700">Send Message</button>
+                    </form>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold mb-6">My Contact Details</h2>
+                    <p class="mb-4"><strong>Email:</strong> kowshikjs487@gmail.com</p>
+                    <p class="mb-4"><strong>Phone:</strong> +9141047589</p>
+                    <p class="mb-4"><strong>Address:</strong> Shivamogga, Thirthahalli 577432</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>Copyright © 2024 All rights reserved | This portfolio website is created by Kowshik J S.</p>
+            <div class="mt-4 space-x-4 flex justify-center">
+                <a href="https://www.linkedin.com/in/kowshik-j-s-b9714b244/" target="_blank"
+                    class="text-white hover:text-gray-200"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                <a href="https://github.com/Kowshik-js" target="_blank"
+                    class="text-white hover:text-gray-200"><i class="fa-brands fa-github text-2xl"></i></a>
+                <a href="https://leetcode.com/u/kowshikjs487/" target="_blank"
+                    class="text-white hover:text-gray-200"><i class="fa-solid fa-code text-2xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000, 
+            easing: "ease-in-out", 
+            once: true, 
+        });
+    </script>
+    
+</body>
+
+</html>

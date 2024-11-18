@@ -1,0 +1,356 @@
+/* 
+body { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif; 
+} 
+
+
+.navbar { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C); 
+    background-color: transparent; 
+} 
+
+.logo .logo-heading { 
+    padding: 0 5rem; 
+    color: #fff; 
+} 
+
+.menu { 
+    padding: 0 5rem; 
+} 
+
+.hamburger { 
+    display: none; 
+    color: #fff; 
+    font-size: 25px; 
+} 
+
+.cross-icon { 
+    display: none; 
+} 
+
+.menu .menu-list { 
+    display: flex; 
+    list-style: none; 
+} 
+
+.menu-list .menu-list-items { 
+    padding: 0.5rem 1rem; 
+} 
+
+@media screen and (min-width: 856px) and (max-width: 1024px) { 
+    .menu-list .menu-list-items { 
+        padding: 0.5rem 0.3rem; 
+    } 
+}
+
+
+.hero {
+    background-color: #2794B3;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 4.8rem 0;
+}
+
+.hero::before {
+    content: "";
+    background-image: url('my-passport-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    right: 5rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.hero .intro { 
+    text-align: center; 
+    margin: 0 5rem; 
+    padding-left: 20%;
+} 
+
+.hero .intro-buttons { 
+    margin: 2rem 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-evenly; 
+} 
+
+
+.about { 
+    display: flex; 
+    align-items: center; 
+    background-image: linear-gradient(45deg, #363D73, #2794B3); 
+    justify-content: space-between; 
+    width: 100%; 
+} 
+
+.about .about-text { 
+    width: 450px; 
+    color: #fff; 
+    padding: 5rem 1rem 5rem 5rem; 
+} 
+
+.about .about-image img { 
+    height: 400px; 
+    width: 450px; 
+    padding: 5rem 5rem 5rem 1rem; 
+} 
+
+
+.portfolio { 
+    margin: 4.8rem 0; 
+    padding: 0 5rem; 
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    color: #363D73;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+}
+
+
+.port-card {
+    background-color: #fff;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.port-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.port-card .image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.port-card .card-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.port-card .card-content h3 {
+    font-size: 1.5rem;
+    color: #363D73;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.port-card .card-content p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
+.port-card .card-content .project-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    background-color: #363D73;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.port-card .card-content .project-btn:hover {
+    background-color: #2b325f;
+}
+
+
+.contact { 
+    padding: 0 5rem; 
+} 
+
+.contact-content { 
+    display: flex; 
+    margin: 3rem 0; 
+    justify-content: space-between; 
+} 
+
+.contact-form-container { 
+    width: 30%; 
+} 
+
+.contact-form { 
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.contact-form .form-controls {
+    width: 100%; 
+    padding: 10px;
+    margin: 1.67rem 0; 
+    box-sizing: border-box; 
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 1.5rem; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+.contact-form .form-btn {
+    width: 100%; 
+    padding: 12px;
+    margin-top: 1rem;
+}
+
+.contact-details { 
+    width: 50%; 
+} 
+
+
+.footer { 
+    background-color: #000; 
+    color: #fff; 
+    padding: 2rem 5rem; 
+    text-align: center; 
+}
+
+.footer-content { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-content h4 { 
+    margin: 0 0 1rem; 
+    font-size: 1rem; 
+    font-weight: lighter; 
+}
+
+.footer-menu-list { 
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    margin: 1rem 0; 
+    list-style: none; 
+}
+
+.footer-list-items { 
+    margin: 0 1rem; 
+}
+
+.footer-links { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    background-color: #35A99C; 
+    color: #fff; 
+    font-size: 1.5rem; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
+    line-height: 50px; 
+}
+
+.footer-links:hover { 
+    background-color: #fff; 
+    color: #35A99C; 
+}
+
+.social-links { 
+    margin: 1rem 0; 
+}
+
+.social-links i { 
+    display: block; 
+    margin: 0; 
+    font-size: 1.5rem; 
+    color: inherit; 
+    line-height: 50px; 
+}
+
+.footer-menu { 
+    margin: 1rem 0; 
+}
+
+.text-center { 
+    text-align: center; 
+}
+
+.white-text { 
+    color: #fff; 
+}
+
+
+.greet-heading { 
+    font-size: 1.3rem; 
+    font-weight: lighter; 
+    margin: 0; 
+    letter-spacing: 1px; 
+} 
+
+.my-heading { 
+    font-size: 2.5rem; 
+    margin: 0; 
+} 
+
+.sub-heading { 
+    margin: 0; 
+    font-size: 0.8rem; 
+    color: #ccc; 
+    font-weight: lighter; 
+} 
+
+.links:hover { 
+    border-bottom: 2px solid #fff; 
+} 
+
+.links { 
+    border-bottom: 2px solid transparent; 
+    transition: all 0.25s; 
+    padding: 5px; 
+    text-decoration: none; 
+    color: #fff; 
+} 
+
+
+@media screen and (max-width: 768px) { 
+    .footer { 
+        padding: 2rem; 
+    } 
+    .footer-menu-list { 
+        flex-direction: column; 
+    } 
+}
+
+*/
